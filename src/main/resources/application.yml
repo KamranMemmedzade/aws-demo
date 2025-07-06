@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: aws-demo
+  config:
+    import: classpath:application-db.yml
+server:
+  servlet:
+    context-path: /demo
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+
+

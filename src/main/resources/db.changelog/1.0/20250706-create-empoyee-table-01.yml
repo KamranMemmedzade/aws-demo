@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id:  1
+      author:  kamran.mammadzada
+      changes:
+        - createTable:
+            tableName:  employee
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name:  name
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              - column:
+                  name:  last_name
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              - column:
+                  name:  salary
+                  type:  varchar(50)
+              - column:
+                  name:  created_at
+                  type:  timestamp
+              - column:
+                  name: updated_at
+                  type: timestamp
+
+

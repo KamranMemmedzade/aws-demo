@@ -1,0 +1,13 @@
+databaseChangeLog:
+     - changeSet:
+            id: 2
+            author: kamran.mammadzada
+            changes:
+                 - createSequence:
+                        cycle: true
+                        dataType: int
+                        incrementBy: 50
+                        maxValue: 10000
+                        minValue: 1
+                        sequenceName: employee_seq
+                        startValue: 1
